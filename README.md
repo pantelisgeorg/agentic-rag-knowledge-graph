@@ -99,7 +99,7 @@ For other LLM providers:
 LLM_PROVIDER=ollama
 LLM_BASE_URL=http://localhost:11434/v1
 LLM_API_KEY=ollama
-LLM_CHOICE=qwen2.5:14b-instruct
+LLM_CHOICE=nomic-embed-text-v2-moe:latest
 
 # llama.cpp (Local — better MoE GPU offload than Ollama)
 # LLM_PROVIDER=openai
@@ -128,11 +128,8 @@ Add your markdown documents to the `documents/` folder:
 
 ```bash
 mkdir -p documents
-# Add your markdown files about tech companies, AI research, etc.
-# Example: documents/google_ai_initiatives.md
-#          documents/microsoft_openai_partnership.md
+# Add your markdown files here.
 ```
-
 **Note**: Documents are gitignored — add your own `.md` files here. Be aware that processing many files into the knowledge graph will take significant time (potentially 30+ minutes) due to the computational complexity of entity extraction and relationship building.
 
 ### 2. Run Document Ingestion
