@@ -224,26 +224,17 @@ python cli.py --port 8080
 ============================================================
 Connected to: http://localhost:8058
 
-You: What are Microsoft's AI initiatives?
+You: Query...........?
 
 🤖 Assistant:
-Microsoft has several major AI initiatives including...
+Answer................
 
 🛠 Tools Used:
-  1. vector_search (query='Microsoft AI initiatives', limit=10)
-  2. graph_search (query='Microsoft AI projects')
-
+  1. vector_search 
+  2. graph_search 
+  3. hybrid_search
+  4. get_entity_relationships 
 ────────────────────────────────────────────────────────────
-
-You: How is Microsoft connected to OpenAI?
-
-🤖 Assistant:
-Microsoft has a significant strategic partnership with OpenAI...
-
-🛠 Tools Used:
-  1. hybrid_search (query='Microsoft OpenAI partnership', limit=10)
-  2. get_entity_relationships (entity='Microsoft')
-```
 
 #### CLI Commands
 
@@ -273,7 +264,7 @@ curl -X POST "http://localhost:8058/chat" \
 curl -X POST "http://localhost:8058/chat/stream" \
   -H "Content-Type: application/json" \
   -d '{
-    "message": "Compare Microsoft and Google'\''s AI strategies",
+    "message": "What is the relation........",
   }'
 ```
 
