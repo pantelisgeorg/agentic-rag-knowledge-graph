@@ -255,7 +255,7 @@ curl http://localhost:8058/health
 curl -X POST "http://localhost:8058/chat" \
   -H "Content-Type: application/json" \
   -d '{
-    "message": "What are Google'\''s main AI initiatives?"
+    "message": "What ...............?"
   }'
 ```
 
@@ -264,7 +264,7 @@ curl -X POST "http://localhost:8058/chat" \
 curl -X POST "http://localhost:8058/chat/stream" \
   -H "Content-Type: application/json" \
   -d '{
-    "message": "What is the relation........",
+    "message": "What is the relation........?"
   }'
 ```
 
